@@ -12,7 +12,7 @@
   const pct = (j, n) => n ? Math.round(100 * j / n) + '%' : '—';
   const vandaag = () => new Date().toLocaleDateString('sv-SE');
   const bestandsnaam = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Za-z0-9]+/g, '_').replace(/^_|_$/g, '');
-  const gebruikersnaamVoor = (vn, n) => (vn + '.' + n).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9.]/g, '');
+  const gebruikersnaamVoor = (vn, n) => (n ? vn + '.' + n : vn).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9.]/g, '');
 
   function info(st, nr) {
     const geslaagd = st.geslaagd.includes(nr);

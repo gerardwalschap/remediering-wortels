@@ -64,8 +64,8 @@ button, .knop {
   font: inherit; font-size: 14px; border-radius: 8px; border: 1px solid var(--blauw);
   background: var(--blauw); color: #fff; padding: 9px 16px; cursor: pointer; text-decoration: none; display: inline-block;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) button:not(.licht):not(.tab):not(.link) { color: #0d1622; } }
-:root[data-theme="dark"] button:not(.licht):not(.tab):not(.link) { color: #0d1622; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) button:not(.licht):not(.tab):not(.link):not(.bn):not(.tk) { color: #0d1622; } }
+:root[data-theme="dark"] button:not(.licht):not(.tab):not(.link):not(.bn):not(.tk) { color: #0d1622; }
 button:hover { filter: brightness(1.08); }
 button:disabled { opacity: .5; cursor: not-allowed; }
 button.licht { background: transparent; color: var(--blauw); }
