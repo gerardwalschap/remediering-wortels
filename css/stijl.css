@@ -15,20 +15,7 @@
   --schaduw: 0 1px 3px rgba(20, 40, 70, .08), 0 4px 14px rgba(20, 40, 70, .06);
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --blauw: #7fb0ec; --blauw-licht: #1b2a3e; --oranje: #f29a5c; --oranje-licht: #3a2717;
-    --groen: #6fcf97; --groen-licht: #16301f; --rood: #f08a7e; --rood-licht: #3a1c18;
-    --grijs: #9aa3b0; --lijn: #334155; --tekst: #e6eaf0; --vlak: #18202b; --achter: #10161e;
-    --schaduw: 0 1px 3px rgba(0,0,0,.4); color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --blauw: #7fb0ec; --blauw-licht: #1b2a3e; --oranje: #f29a5c; --oranje-licht: #3a2717;
-  --groen: #6fcf97; --groen-licht: #16301f; --rood: #f08a7e; --rood-licht: #3a1c18;
-  --grijs: #9aa3b0; --lijn: #334155; --tekst: #e6eaf0; --vlak: #18202b; --achter: #10161e;
-  --schaduw: 0 1px 3px rgba(0,0,0,.4); color-scheme: dark;
-}
+
 
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -42,9 +29,7 @@ header.balk {
   background: var(--blauw); color: #fff; padding: 12px 16px;
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
 }
-:root[data-theme="dark"] header.balk, :root:not([data-theme="light"]) header.balk { color: #fff; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) header.balk { background: #173a66; } }
-:root[data-theme="dark"] header.balk { background: #173a66; }
+
 header.balk .logo { font-weight: bold; font-size: 17px; letter-spacing: .2px; }
 header.balk .logo small { display: block; font-weight: normal; font-size: 12px; opacity: .85; }
 header.balk .rechts { margin-left: auto; display: flex; gap: 8px; align-items: center; font-size: 13px; }
@@ -64,8 +49,7 @@ button, .knop {
   font: inherit; font-size: 14px; border-radius: 8px; border: 1px solid var(--blauw);
   background: var(--blauw); color: #fff; padding: 9px 16px; cursor: pointer; text-decoration: none; display: inline-block;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) button:not(.licht):not(.tab):not(.link):not(.bn):not(.tk) { color: #0d1622; } }
-:root[data-theme="dark"] button:not(.licht):not(.tab):not(.link):not(.bn):not(.tk) { color: #0d1622; }
+
 button:hover { filter: brightness(1.08); }
 button:disabled { opacity: .5; cursor: not-allowed; }
 button.licht { background: transparent; color: var(--blauw); }
